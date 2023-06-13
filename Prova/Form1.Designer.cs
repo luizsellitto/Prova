@@ -33,9 +33,9 @@
             // 
             // bt_correcao
             // 
-            this.bt_correcao.Location = new System.Drawing.Point(344, 295);
+            this.bt_correcao.Location = new System.Drawing.Point(333, 296);
             this.bt_correcao.Name = "bt_correcao";
-            this.bt_correcao.Size = new System.Drawing.Size(75, 23);
+            this.bt_correcao.Size = new System.Drawing.Size(83, 23);
             this.bt_correcao.TabIndex = 0;
             this.bt_correcao.Text = "Correção";
             this.bt_correcao.UseVisualStyleBackColor = true;

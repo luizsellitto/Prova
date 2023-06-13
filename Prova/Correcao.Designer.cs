@@ -39,6 +39,7 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.bt_verify = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -121,11 +122,20 @@
             this.bt_verify.UseVisualStyleBackColor = true;
             this.bt_verify.Click += new System.EventHandler(this.bt_verify_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(443, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 12;
+            // 
             // Correcao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_verify);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
@@ -157,5 +167,6 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button bt_verify;
+        private System.Windows.Forms.Label label1;
     }
 }

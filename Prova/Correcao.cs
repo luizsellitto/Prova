@@ -19,14 +19,14 @@ namespace Prova
         
         private void bt_verify_Click(object sender, EventArgs e)
         {
-            char[] resposta = { Convert.ToChar(textBox1.Text), Convert.ToChar(textBox2.Text), Convert.ToChar(textBox3.Text), Convert.ToChar(textBox4.Text), Convert.ToChar(textBox5.Text), Convert.ToChar(textBox6.Text), Convert.ToChar(textBox7.Text), Convert.ToChar(textBox8.Text), Convert.ToChar(textBox9.Text), Convert.ToChar(textBox10.Text)};
+
             ProvaCorrecao aluno = new ProvaCorrecao();
-            for (int i = 0; i < resposta.Length; i++)
+            for (int i = 0; i < 10; i++)
             {
             aluno.RespostaAluno(Convert.ToChar(textBox1.Text), Convert.ToChar(textBox2.Text), Convert.ToChar(textBox3.Text), Convert.ToChar(textBox4.Text), Convert.ToChar(textBox5.Text), Convert.ToChar(textBox6.Text), Convert.ToChar(textBox7.Text), Convert.ToChar(textBox8.Text), Convert.ToChar(textBox9.Text), Convert.ToChar(textBox10.Text));
             }
 
-            MessageBox.Show($"{aluno.Correcao()}");
+            label1.Text = ($"{aluno.Correcao()}");
             
             
         }

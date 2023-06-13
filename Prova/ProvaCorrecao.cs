@@ -6,17 +6,22 @@ class ProvaCorrecao
 {
     private char[] gabaritocorreto = {'a', 'b', 'd', 'e', 'c', 'a', 'a', 'd', 'e', 'b'};
     private char[] resposta = new char[10];
-    public void RespostaAluno(char gabarito)
+    public void RespostaAluno(char a, char b, char c, char d, char e, char f, char g, char h, char i, char j)
     {
-        for (int i = 0; i < resposta.Length; i++)
-        {
+        
+        resposta[0] = a;
+        resposta[1] = b;
+        resposta[2] = c;
+        resposta[3] = d;
+        resposta[4] = e;
+        resposta[5] = f;
+        resposta[6] = g;
+        resposta[7] = h;
+        resposta[8] = i;
+        resposta[9] = j;
 
-            if (resposta[i] == 0)
-            {
-                resposta[i] = gabarito;
-            }
 
-        }
+
     }
 
     public int Correcao()

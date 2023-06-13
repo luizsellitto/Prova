@@ -22,20 +22,30 @@ class ProvaCorrecao
 
 
 
+
+
     }
 
     public int Correcao()
-    {
-        int result = 0;
-        for (int i = 0; i < gabaritocorreto.Length; i++)
+    {int result = 0;
+        try
         {
-            if (resposta[i] == gabaritocorreto[i])
+            
+            for (int i = 0; i < gabaritocorreto.Length; i++)
             {
-                result+= 1;
+                if (resposta[i] == gabaritocorreto[i])
+                {
+                    result += 1;
+                }
             }
         }
+        catch (Exception e)
+        {
+            MessageBox.Show("Está dando erro!");
+        }
+        return result;
         
 
-        return result;
+        
     }
 }

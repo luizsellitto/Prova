@@ -27,7 +27,7 @@ namespace Prova
             aluno.RespostaAluno(Convert.ToChar(textBox1.Text), Convert.ToChar(textBox2.Text), Convert.ToChar(textBox3.Text), Convert.ToChar(textBox4.Text), Convert.ToChar(textBox5.Text), Convert.ToChar(textBox6.Text), Convert.ToChar(textBox7.Text), Convert.ToChar(textBox8.Text), Convert.ToChar(textBox9.Text), Convert.ToChar(textBox10.Text));
             }
             
-                label1.Text = ($"{aluno.Correcao()}");
+                label1.Text = ($"O número de acertos foi de: {aluno.Correcao()}");
             }
             catch (Exception ex)
             {
